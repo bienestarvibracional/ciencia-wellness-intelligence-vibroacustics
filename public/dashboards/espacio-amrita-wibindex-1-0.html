@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard Wellness Intelligence - Espacio AMRITA</title>
+<style>
+:root{--teal:#086b7e;--teal2:#07576a;--ink:#073b50;--line:#a9d8df;--good:#0a986d;--watch:#ef5d6f;--soft:#fffdfa}
+*{box-sizing:border-box}body{margin:0;background:#eaf4f5;color:var(--ink);font-family:"Segoe UI",Arial,sans-serif;letter-spacing:0}.poster{width:min(1180px,100%);margin:0 auto;background:radial-gradient(circle at 12% 8%,#ffe1dc 0 12%,transparent 30%),radial-gradient(circle at 92% 10%,#bdecef 0 10%,transparent 28%),linear-gradient(145deg,#fffdfa 0%,#f7fcfc 55%,#d5f1f2 100%);padding:28px 34px 0;border-radius:0 0 24px 24px;overflow:hidden}.header-row{display:flex;align-items:flex-start;justify-content:space-between;gap:22px}.logo img{width:190px;max-height:100px;object-fit:contain}.header-meta{padding-top:12px;text-align:right;font-size:17px;font-weight:900;color:#07576a;white-space:nowrap}.header-meta .meta-label{display:inline-block;margin:0 7px 0 12px;padding:5px 10px;border-radius:8px;background:linear-gradient(90deg,#07576a,#006e82);color:#fff;font-size:13px;text-transform:uppercase;letter-spacing:.4px;box-shadow:0 4px 10px rgba(5,66,82,.18)}.header-meta .meta-label:first-child{margin-left:0}.title{text-align:center;margin-top:12px;padding-top:10px;border-top:1px solid rgba(24,108,127,.22)}.title h1{margin:0;font-family:Georgia,serif;font-size:42px;line-height:1.08;color:#063c50}.title p{margin:8px 0 0;font-size:20px}.pill{display:inline-flex;flex-direction:column;align-items:center;gap:2px;line-height:1.2;margin-top:10px;background:linear-gradient(90deg,#047489,#0b6679);color:#fff;border-radius:10px;padding:10px 18px;font-size:20px;font-weight:900}.pill small{font-size:16px;font-weight:800}.summary{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}.summary-card{background:#fff;border:1.5px solid var(--line);border-radius:18px;box-shadow:0 8px 20px rgba(12,86,100,.12);display:grid;grid-template-columns:112px 1fr;overflow:hidden}.summary-card .icon{display:grid;place-items:center;background:linear-gradient(180deg,#e8f8f9,#d4eef1);font-size:36px;color:#fff;font-weight:900}.icon span{width:74px;height:74px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#0b8191,#07566a);box-shadow:0 6px 16px rgba(0,80,95,.24)}.summary-card .body{padding:18px}.summary-card h2{margin:0 0 12px;color:var(--ink);font-size:20px}.numbers{display:grid;grid-template-columns:1fr auto 1fr auto;gap:12px;align-items:end}.numbers small{display:block;text-transform:uppercase;color:#0b4660;font-weight:900;font-size:11px}.numbers b{font-size:34px}.numbers .delta{font-size:25px;font-weight:900}.summary-card .metric-badge,.summary-card .pct-badge{display:inline-block;padding:5px 10px;border-radius:8px;background:linear-gradient(90deg,#07576a,#006e82);color:#fff;text-transform:uppercase;letter-spacing:.4px;box-shadow:0 4px 10px rgba(5,66,82,.18)}.summary-card .metric-badge{font-size:12px}.summary-card .pct-badge{margin-top:7px;margin-left:8px;font-size:20px;font-weight:900}.good{color:var(--good)}.watch{color:var(--watch)}.table-wrap{background:#fff;border:1.5px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 10px 28px rgba(5,66,82,.16)}table{width:100%;border-collapse:collapse}.table-title{background:linear-gradient(90deg,#07576a,#006e82);color:#fff;font-size:26px;font-weight:900;text-align:center;padding:16px 18px;letter-spacing:0.2px}th{padding:10px 7px;color:#0b4660;font-size:12px;text-transform:uppercase;background:#f5fbfc}td{padding:9px 7px;border-top:1px solid #d9ecef;text-align:center;font-size:18px;font-weight:800}.metric-groups th{background:linear-gradient(90deg,#e4f5f7,#fff7f4);color:#07576a;font-size:17px;letter-spacing:.2px;border-top:1px solid #d9ecef;border-bottom:1px solid #b9dce1}.metric-groups .stress-group{border-left:1px solid #b9dce1;border-right:1px solid #b9dce1}.metric-groups .energy-group{border-left:1px solid #b9dce1}.metric-labels th{font-size:11px;color:#0b4660;background:#f7fcfc}.metric-labels .stress-label{background:#fbffff}.metric-labels .energy-label{background:#fffdfa}.participant{background:linear-gradient(90deg,#dff4f5,#f7ffff);text-align:center}.participant.number-only{display:table-cell;vertical-align:middle;width:64px}.participant span{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#096a7e;color:#fff;margin:0 auto}.participant em{display:block;margin-top:4px;font-style:normal;font-size:11px;font-weight:900;text-transform:uppercase;color:#07576a;line-height:1.05;max-width:92px;overflow-wrap:anywhere}.participant.number-only{width:112px}.mood-cell{font-size:12px;font-weight:700;text-align:left;line-height:1.25;color:#294f5c;background:#fffdfa;min-width:180px}.mood-cell b{display:inline-block;margin-right:4px;color:var(--teal);font-size:10px;text-transform:uppercase}.arrow{color:#639da8}.trend{font-size:17px;position:relative;min-width:110px}.trend b{font-size:25px;vertical-align:-2px}.delta-bar{height:9px;border-radius:999px;margin:6px auto 0;max-width:92px}.delta-bar.good{background:var(--good)}.delta-bar.watch{background:var(--watch)}.legend{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px auto;max-width:900px}.legend-item{display:flex;align-items:center;gap:9px;font-size:14px}.legend-item b{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;border:1.5px solid currentColor;font-size:26px}.cards{display:grid;grid-template-columns:1fr 1fr 1fr 2fr;gap:14px;margin:20px 0;align-items:stretch}.kpi,.reading{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 8px 20px rgba(12,86,100,.1)}.kpi h3,.reading h3{margin:0 0 12px;color:var(--teal);font-size:19px}.kpi strong{display:block;font-size:36px}.kpi.convergence{border-color:#8bd2d6;background:linear-gradient(120deg,#fff,#eefbfb)}.kpi.convergence strong{color:var(--good)}.reading{border-color:#f5b7b8;background:linear-gradient(120deg,#fff,#fff2ef)}.reading h3{font-family:Georgia,serif;color:#d95a68;font-size:30px}.reading p{font-size:17px;line-height:1.38;margin:0}.somatic-note{margin:18px 0 0;padding:18px 22px;border:1.5px solid #f2b4ad;border-radius:18px;background:linear-gradient(120deg,#fffdf8,#fff1ed);color:#214b58;font-size:18px;line-height:1.42;text-align:center;box-shadow:0 8px 20px rgba(12,86,100,.08)}.somatic-note strong{color:#d95a68}.footer{margin:24px -34px 0;background:linear-gradient(180deg,#086b7e,#064d62);color:#fff;text-align:center;padding:22px;font-family:Georgia,serif;font-size:34px}.footer img{display:block;width:180px;max-height:82px;object-fit:contain;margin:0 auto 10px;background:#fff;border-radius:10px;padding:8px}.footer small{display:block;font-family:"Segoe UI",Arial,sans-serif;font-size:18px;margin-top:8px}.source{text-align:center;color:var(--teal);font-size:12px;padding:10px}@media (max-width:900px){.poster{padding:22px 16px 0}.header-row{flex-direction:column;align-items:center}.header-meta{text-align:center;white-space:normal}.title h1{font-size:34px}.summary,.cards{grid-template-columns:1fr}.summary-card{grid-template-columns:88px 1fr}.legend{grid-template-columns:1fr 1fr}.table-wrap{overflow-x:auto}table{min-width:900px}.footer{margin-left:-16px;margin-right:-16px}}
+</style>
+</head>
+<body>
+<main class="poster">
+  <header class="report-header">
+    <div class="header-row">
+      <div class="logo"><img src="/images/logo-bienestar-vibracional.png" alt="Logo"></div>
+      <div class="header-meta"><span class="meta-label">Grupo</span>Espacio AMRITA <span class="meta-label">Fecha</span>26 junio 2026</div>
+    </div>
+    <div class="title">
+      <h1>Dashboard Wellness Intelligence &middot; WIBindex 1.0</h1>
+      <p>Comparativa de estr&eacute;s y energ&iacute;a</p>
+      <div class="pill">Pr&aacute;ctica som&aacute;tica elegida: Experiencia Gong<small>Duraci&oacute;n: 50 minutos</small></div>
+    </div>
+  </header>
+
+  <section class="summary">
+    <article class="summary-card"><div class="icon"><span>☁</span></div><div class="body"><h2>Estr&eacute;s promedio grupal</h2><div class="numbers"><div><small class="metric-badge">Pre</small><b>3.12</b></div><span>&rarr;</span><div><small class="metric-badge">Post</small><b>2.38</b></div><div class="delta good">&darr; -0.73<small class="pct-badge">-23.6%</small></div></div></div></article>
+    <article class="summary-card"><div class="icon"><span>☼</span></div><div class="body"><h2>Energ&iacute;a promedio grupal</h2><div class="numbers"><div><small class="metric-badge">Pre</small><b>58.66</b></div><span>&rarr;</span><div><small class="metric-badge">Post</small><b>66.12</b></div><div class="delta good">&uarr; +7.45<small class="pct-badge">+12.7%</small></div></div></div></article>
+  </section>
+
+  <section class="table-wrap">
+    <div class="table-title">Resumen pre y post intervenci&oacute;n</div>
+    <table>
+      <thead>
+        <tr class="metric-groups"><th rowspan="2"></th><th rowspan="2">AUTORECONOCIMIENTO SOM&Aacute;TICO</th><th class="stress-group" colspan="4">Estr&eacute;s</th><th class="energy-group" colspan="4">Energ&iacute;a</th></tr>
+        <tr class="metric-labels"><th class="stress-label">Pre</th><th class="stress-label"></th><th class="stress-label">Post</th><th class="stress-label">Delta</th><th class="energy-label">Pre</th><th class="energy-label"></th><th class="energy-label">Post</th><th class="energy-label">Delta</th></tr>
+      </thead>
+      <tbody>
+<tr>
+  <td class="participant number-only"><span>1</span><em>CECILIA</em></td>
+  <td class="mood-cell"><b>Pre</b>CANSADA<br><b>Post</b>LIVIANA</td>
+  <td>3.86</td><td class="arrow">&rarr;</td><td>2.39</td>
+  <td class="trend good"><b>&darr;</b> -1.47<div class="delta-bar good" style="width:98%"></div></td>
+  <td>44.00</td><td class="arrow">&rarr;</td><td>64.52</td>
+  <td class="trend good"><b>&uarr;</b> +20.52<div class="delta-bar good" style="width:100%"></div></td>
+</tr>
+<tr>
+  <td class="participant number-only"><span>2</span><em>ALEJANDRA</em></td>
+  <td class="mood-cell"><b>Pre</b>PESADEZ EN HOMBROS<br><b>Post</b>M&#193;S FLOJA</td>
+  <td>3.09</td><td class="arrow">&rarr;</td><td>2.58</td>
+  <td class="trend good"><b>&darr;</b> -0.51<div class="delta-bar good" style="width:34%"></div></td>
+  <td>59.16</td><td class="arrow">&rarr;</td><td>74.76</td>
+  <td class="trend good"><b>&uarr;</b> +15.60<div class="delta-bar good" style="width:98%"></div></td>
+</tr>
+<tr>
+  <td class="participant number-only"><span>3</span><em>GUILLERMINA</em></td>
+  <td class="mood-cell"><b>Pre</b>CANSADA Y ESTRESADA<br><b>Post</b>FLOTANDO</td>
+  <td>2.24</td><td class="arrow">&rarr;</td><td>1.92</td>
+  <td class="trend good"><b>&darr;</b> -0.32<div class="delta-bar good" style="width:21%"></div></td>
+  <td>57.77</td><td class="arrow">&rarr;</td><td>59.88</td>
+  <td class="trend good"><b>&uarr;</b> +2.11<div class="delta-bar good" style="width:13%"></div></td>
+</tr>
+<tr>
+  <td class="participant number-only"><span>4</span><em>LAURA</em></td>
+  <td class="mood-cell"><b>Pre</b>UN POCO ANSIOSA<br><b>Post</b>SUPER BIEN</td>
+  <td>2.72</td><td class="arrow">&rarr;</td><td>2.26</td>
+  <td class="trend good"><b>&darr;</b> -0.46<div class="delta-bar good" style="width:31%"></div></td>
+  <td>63.58</td><td class="arrow">&rarr;</td><td>62.67</td>
+  <td class="trend watch"><b>&darr;</b> -0.91<div class="delta-bar watch" style="width:8%"></div></td>
+</tr>
+<tr>
+  <td class="participant number-only"><span>5</span><em>BIENESTAR</em></td>
+  <td class="mood-cell"><b>Pre</b>ESPECTANTE<br><b>Post</b>RELAJADO</td>
+  <td>3.67</td><td class="arrow">&rarr;</td><td>2.76</td>
+  <td class="trend good"><b>&darr;</b> -0.91<div class="delta-bar good" style="width:61%"></div></td>
+  <td>68.80</td><td class="arrow">&rarr;</td><td>68.75</td>
+  <td class="trend watch"><b>&darr;</b> -0.05<div class="delta-bar watch" style="width:8%"></div></td>
+</tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="legend">
+    <div class="legend-item good"><b>&darr;</b><span><strong>Estr&eacute;s</strong><br>Disminuci&oacute;n = positivo</span></div>
+    <div class="legend-item watch"><b>&uarr;</b><span><strong>Estr&eacute;s</strong><br>Aumento = atenci&oacute;n</span></div>
+    <div class="legend-item good"><b>&uarr;</b><span><strong>Energ&iacute;a</strong><br>Aumento = positivo</span></div>
+    <div class="legend-item watch"><b>&darr;</b><span><strong>Energ&iacute;a</strong><br>Disminuci&oacute;n = atenci&oacute;n</span></div>
+  </section>
+
+  <section class="cards">
+    <article class="kpi"><h3>Estr&eacute;s</h3><strong>5 de 5</strong><p>participantes disminuyeron su estr&eacute;s</p></article>
+    <article class="kpi"><h3>Energ&iacute;a</h3><strong>3 de 5</strong><p>participantes aumentaron su energ&iacute;a</p></article>
+    <article class="kpi convergence"><h3>Convergencia</h3><strong>60%</strong><p>3 de 5 participantes con respuesta convergente</p></article>
+    <article class="reading"><h3>Lectura general</h3><p>En el grupo se observa una disminuci&oacute;n consistente del estr&eacute;s fisiol&oacute;gico y un aumento promedio de la energ&iacute;a. La respuesta energ&eacute;tica no fue homog&eacute;nea en todos los participantes, pero la lectura general muestra una modulaci&oacute;n positiva compatible con regulaci&oacute;n homeost&aacute;tica.</p></article>
+  </section>
+
+  <section class="somatic-note"><strong>Nota de integraci&oacute;n:</strong> Consideramos esta pr&aacute;ctica una experiencia de inteligencia som&aacute;tica donde el cuerpo entrena la capacidad de regulaci&oacute;n homeost&aacute;tica y activaci&oacute;n vagal. La respuesta neurofisiol&oacute;gica es la esperada dentro del contexto de la experiencia de bienestar dise&ntilde;ada.</section>
+
+  <footer class="footer"><img src="/images/logo-bienestar-vibracional.png" alt="Logo"><small>www.bienestarvibracional.com</small></footer>
+  <div class="source">Fuente: Excel Bio-Well/GDV + autoreconocimiento som&aacute;tico &middot; Panel dual WIBindex 1.0, sin score compuesto &middot; Generado 2026-08-02 20:07</div>
+</main>
+</body>
+</html>
+
