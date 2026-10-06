@@ -47,6 +47,36 @@ export default function CasesPage() {
         <div className="case-grid">
           <article className="case-card">
             <Image
+              src="/images/casos/gf-body-fit-studio-yoga-gong-2026-10-03.jpeg"
+              alt="Caso grupal GF BODY FIT STUDIO con Yoga y Gong"
+              width={960}
+              height={1280}
+              unoptimized
+            />
+            <div className="case-card-body">
+              <p className="case-meta">3 octubre 2026</p>
+              <h2>GF BODY FIT STUDIO</h2>
+              <div className="case-chips">
+                <span className="case-chip">Yoga + Gong</span>
+                <span className="case-chip">5 participantes</span>
+                <span className="case-chip">WIBindex 1.0</span>
+              </div>
+              <p>
+                Comparativa grupal de estr&eacute;s fisiol&oacute;gico y energ&iacute;a
+                neurofisiol&oacute;gica antes y despu&eacute;s de una pr&aacute;ctica
+                som&aacute;tica de Yoga y Gong.
+              </p>
+              <Link
+                className="preview-cta"
+                href="/casos/gf-body-fit-studio-2026-10-03"
+              >
+                Ver caso <span>&rarr;</span>
+              </Link>
+            </div>
+          </article>
+
+          <article className="case-card">
+            <Image
               src="/images/casos/emuna-meditagong-2026-09-04.jpeg"
               alt="Caso grupal EMUNA MeditaGong con Gong"
               width={1600}
